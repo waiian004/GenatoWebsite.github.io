@@ -1,32 +1,42 @@
+/* Reset styles */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('bodybackground.jpg');
-    color: #333;
 }
 
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Updated font style */
+    color: #333;
+    background-image: url('bodybackground.jpg');
+}
+
+.container {
+    margin: 0 55px;
+    max-width: 1200px; /* Set a maximum width to prevent excessive stretching on large screens */
+    margin-left: auto; /* Center align the container */
+    margin-right: auto;
+}
+
+/* Header styles */
 header {
     background-image: url('J59.gif');
     background-size: cover;
     color: #ffffff;
     text-align: center;
     padding: 10px;
-    margin: 0 55px;
-    
-    .profile-picture {
-    width: 200px; 
-    height: 200px; 
-    border-radius: 10%; 
-    margin-right: 10px;       
-
 }
 
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-right: 10px;
 }
 
+/* Navigation styles */
 nav {
     background-color: #333;
-    margin: 0 55px;
     padding: 10px;
     text-align: center;
 }
@@ -36,19 +46,24 @@ nav a {
     text-decoration: none;
     margin: 0 45px;
     font-size: 1.2em;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s; /* Added background-color transition */
 }
 
 nav a:hover {
     color: #338A90;
+    font-weight: bold; /* Highlighted link boldness */
+    text-decoration: underline; /* Underline on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Background color change on hover */
 }
 
+/* Main content styles */
 section {
-    margin: 100px;
+    margin: 100px auto; /* Center align the section */
     padding: 50px;
     background-color: #303030;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limit maximum width of the section */
 }
 
 h1 {
@@ -60,20 +75,14 @@ h2 {
 }
 
 p {
-    font-size: 1.3em; 
+    font-size: 1.3em;
     color: #338A90;
-    text-align: center;
+    text-align: left;
 }
 
-    .picture {
-    width: 200px; 
-    height: 200px; 
-    border-radius: 20%; 
-    margin-right: 100px; 
-
-
-
-
-
-
-    
+.picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    margin-right: 100px;
+}
